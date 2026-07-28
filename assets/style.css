@@ -31,9 +31,11 @@
 
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 90px;
     }
 
     body {
+      overflow-x: hidden;
       font-family: "Inter", sans-serif;
       color: var(--text);
       background: var(--white);
@@ -84,6 +86,22 @@
       max-width: 700px;
       margin: 0 auto 55px;
       text-align: center;
+    }
+
+    .hero-content,
+    .hero-visual,
+    .feature-card,
+    .pricing-card,
+    .contact-form,
+    .contact-info {
+      min-width: 0;
+    }
+
+    .hero-title,
+    .section-title,
+    .cta-box h2,
+    .contact-info h2 {
+      overflow-wrap: anywhere;
     }
 
     .section-tag {
@@ -180,10 +198,16 @@
       display: flex;
       align-items: center;
       gap: 11px;
+      flex-shrink: 0;
       color: var(--dark);
       font-family: "Poppins", sans-serif;
       font-size: 1.45rem;
       font-weight: 800;
+    }
+
+    .logo img {
+      width: 90px;
+      height: auto;
     }
 
     .logo-icon {
@@ -1387,6 +1411,10 @@
         padding-top: 125px;
       }
 
+      .hero::before {
+        display: none;
+      }
+
       .hero-title {
         letter-spacing: -1.5px;
       }
@@ -1457,6 +1485,10 @@
 
       .business-type {
         justify-content: center;
+      }
+
+      .dashboard {
+        transform: rotate(0deg);
       }
 
       .dashboard-layout {
