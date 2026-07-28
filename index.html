@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="QRServe is a modern QR ordering and restaurant management platform for restaurants, cafés, bars, and food businesses."
+  />
+
+  <title>QRServe | Smart Restaurant Management Platform</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+    rel="stylesheet"
+    
+  />
+    <link rel="stylesheet" href="assets/style.css">
+  
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar">
+      <a href="#home" class="logo">
+        <img src="images/logo.png" alt="QRServe Logo" width="90>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-outline">Book a Demo</a>
+        <a href="#pricing" class="btn btn-primary">Start Free Trial</a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span>⭐</span>
+            Smart dining starts here
+          </div>
+
+          <h1 class="hero-title">
+            Run Your Restaurant
+            <span>Smarter.</span>
+          </h1>
+
+          <p class="hero-description">
+            QRServe brings QR ordering, digital menus, kitchen management,
+            inventory, sales reports, and restaurant tools together in one
+            easy-to-use platform.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#pricing" class="btn btn-primary">
+              Start Free Trial
+              <span>→</span>
+            </a>
+
+            <a href="#how-it-works" class="btn btn-outline">
+              See How It Works
+              <span>▶</span>
+            </a>
+          </div>
+
+          <div class="hero-points">
+            <div class="hero-point">
+              <span class="check-icon">✓</span>
+              No credit card required
+            </div>
+
+            <div class="hero-point">
+              <span class="check-icon">✓</span>
+              Easy setup
+            </div>
+
+            <div class="hero-point">
+              <span class="check-icon">✓</span>
+              Cancel anytime
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="floating-card qr-card">
+            <div class="floating-icon">▦</div>
+            <div>
+              <strong>QR Menu Ready</strong>
+              <span>Customers can order now</span>
+            </div>
+          </div>
+
+          <div class="floating-card order-card">
+            <div class="floating-icon">🔔</div>
+            <div>
+              <strong>New Order</strong>
+              <span>Table 08 · $24.50</span>
+            </div>
+          </div>
+
+          <div class="dashboard">
+            <div class="dashboard-top">
+              <div class="window-dots">
+                <span class="window-dot"></span>
+                <span class="window-dot"></span>
+                <span class="window-dot"></span>
+              </div>
+
+              <div class="dashboard-user">PC</div>
+            </div>
+
+            <div class="dashboard-layout">
+              <aside class="sidebar">
+                <div class="sidebar-logo">Q</div>
+                <div class="sidebar-item active">⌂</div>
+                <div class="sidebar-item">▤</div>
+                <div class="sidebar-item">▦</div>
+                <div class="sidebar-item">◴</div>
+                <div class="sidebar-item">⚙</div>
+              </aside>
+
+              <div class="dashboard-content">
+                <div class="dashboard-heading">
+                  <h3>Restaurant Dashboard</h3>
+                  <span class="live-badge">● Live</span>
+                </div>
+
+                <div class="stat-grid">
+                  <div class="stat-card">
+                    <div class="stat-label">Today's Sales</div>
+                    <div class="stat-number">$1,284</div>
+                    <div class="stat-change">+12.5%</div>
+                  </div>
+
+                  <div class="stat-card">
+                    <div class="stat-label">Orders</div>
+                    <div class="stat-number">86</div>
+                    <div class="stat-change">+8.2%</div>
+                  </div>
+
+                  <div class="stat-card">
+                    <div class="stat-label">Customers</div>
+                    <div class="stat-number">174</div>
+                    <div class="stat-change">+6.8%</div>
+                  </div>
+                </div>
+
+                <div class="order-panel">
+                  <h4>Recent Orders</h4>
+
+                  <div class="order-item">
+                    <div class="food-icon">🍔</div>
+                    <div>
+                      <div class="order-name">Classic Burger</div>
+                      <div class="order-table">Table 08 · 2 items</div>
+                    </div>
+                    <span class="order-status">Preparing</span>
+                  </div>
+
+                  <div class="order-item">
+                    <div class="food-icon">🍕</div>
+                    <div>
+                      <div class="order-name">Pepperoni Pizza</div>
+                      <div class="order-table">Table 03 · 1 item</div>
+                    </div>
+                    <span class="order-status">New</span>
+                  </div>
+
+                  <div class="order-item">
+                    <div class="food-icon">🥤</div>
+                    <div>
+                      <div class="order-name">Milk Tea Bundle</div>
+                      <div class="order-table">Takeout · 4 items</div>
+                    </div>
+                    <span class="order-status">Ready</span>
+                  </div>
+
+                  <div class="order-item">
+                    <div class="food-icon">🍝</div>
+                    <div>
+                      <div class="order-name">Creamy Carbonara</div>
+                      <div class="order-table">Table 11 · 2 items</div>
+                    </div>
+                    <span class="order-status">Preparing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Types -->
+    <section class="trusted">
+      <div class="container">
+        <p class="trusted-title">
+          Built for food businesses of every size
+        </p>
+
+        <div class="business-types">
+          <div class="business-type">🍽 Restaurants</div>
+          <div class="business-type">☕ Cafés</div>
+          <div class="business-type">🧋 Milk Tea Shops</div>
+          <div class="business-type">🍺 Bars</div>
+          <div class="business-type">🍔 Food Parks</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Powerful Features</span>
+
+          <h2 class="section-title">
+            Everything Your Restaurant Needs
+          </h2>
+
+          <p class="section-description">
+            Manage orders, menus, kitchen operations, inventory, and business
+            reports from one modern platform.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon">▦</div>
+            <h3>QR Code Ordering</h3>
+            <p>
+              Let customers scan, browse your menu, and order directly from
+              their smartphones.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon">📱</div>
+            <h3>Digital Menu</h3>
+            <p>
+              Update products, prices, availability, categories, and photos
+              without printing new menus.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon">🔔</div>
+            <h3>Kitchen Display</h3>
+            <p>
+              Send orders instantly to your kitchen and monitor preparation
+              status in real time.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon">💳</div>
+            <h3>Smart POS</h3>
+            <p>
+              Process dine-in, takeout, and counter orders with fast payment
+              and sales tracking.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon">📦</div>
+            <h3>Inventory Tracking</h3>
+            <p>
+              Monitor stock levels, ingredients, product availability, and
+              receive low-stock alerts.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon">📊</div>
+            <h3>Sales Analytics</h3>
+            <p>
+              Understand revenue, top-selling products, order volume, and peak
+              business hours.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Simple Process</span>
+
+          <h2 class="section-title">
+            From Scan to Serve
+          </h2>
+
+          <p class="section-description">
+            Make restaurant ordering faster and easier in four simple steps.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <div class="step-number">01</div>
+            <h3>Scan</h3>
+            <p>
+              Customers scan the QR code placed on their table.
+            </p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-number">02</div>
+            <h3>Browse</h3>
+            <p>
+              They view your digital menu and choose their meals.
+            </p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-number">03</div>
+            <h3>Order</h3>
+            <p>
+              The order is submitted directly to your restaurant system.
+            </p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-number">04</div>
+            <h3>Serve</h3>
+            <p>
+              Your kitchen prepares the order and staff deliver it quickly.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+      <div class="container benefits-grid">
+        <div class="reveal">
+          <span class="section-tag">Why QRServe?</span>
+
+          <h2 class="section-title">
+            Better Service. Faster Operations. Smarter Decisions.
+          </h2>
+
+          <p class="section-description">
+            QRServe helps reduce waiting time, prevent order mistakes, and give
+            business owners better control of their restaurant.
+          </p>
+
+          <div class="benefit-list">
+            <div class="benefit-item">
+              <span class="check-icon">✓</span>
+              <div>
+                <strong>Reduce order waiting time</strong>
+                <p>
+                  Customers can order without waiting for restaurant staff.
+                </p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <span class="check-icon">✓</span>
+              <div>
+                <strong>Minimize order errors</strong>
+                <p>
+                  Orders are recorded digitally and sent directly to the
+                  kitchen.
+                </p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <span class="check-icon">✓</span>
+              <div>
+                <strong>Understand your business</strong>
+                <p>
+                  Use sales reports and customer data to make better decisions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="analytics-card reveal">
+          <div class="analytics-title">
+            <h3>Weekly Sales Overview</h3>
+            <span>+18.4%</span>
+          </div>
+
+          <div class="chart">
+            <div class="chart-column">
+              <div class="chart-bar" style="height: 48%"></div>
+              <span class="chart-label">Mon</span>
+            </div>
+
+            <div class="chart-column">
+              <div class="chart-bar" style="height: 62%"></div>
+              <span class="chart-label">Tue</span>
+            </div>
+
+            <div class="chart-column">
+              <div class="chart-bar" style="height: 56%"></div>
+              <span class="chart-label">Wed</span>
+            </div>
+
+            <div class="chart-column">
+              <div class="chart-bar" style="height: 75%"></div>
+              <span class="chart-label">Thu</span>
+            </div>
+
+            <div class="chart-column">
+              <div class="chart-bar" style="height: 68%"></div>
+              <span class="chart-label">Fri</span>
+            </div>
+
+            <div class="chart-column">
+              <div class="chart-bar" style="height: 94%"></div>
+              <span class="chart-label">Sat</span>
+            </div>
+
+            <div class="chart-column">
+              <div class="chart-bar" style="height: 82%"></div>
+              <span class="chart-label">Sun</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Simple Pricing</span>
+
+          <h2 class="section-title">
+            Choose the Right Plan
+          </h2>
+
+          <p class="section-description">
+            Start small and upgrade as your restaurant grows.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card reveal">
+            <h3 class="pricing-name">Starter</h3>
+
+            <p class="pricing-description">
+              Best for small cafés, kiosks, and new food businesses.
+            </p>
+
+            <div class="price">
+              <strong>$19</strong>
+              <span>/ month</span>
+            </div>
+
+            <ul class="pricing-features">
+              <li class="pricing-feature">
+                <span class="check-icon">✓</span>
+                QR code ordering
+              </li>
+
+              <li class="pricing-feature">
+                <span class="check-icon">✓</span>
+                Digital menu management
+              </li>
+
+              <li class="pricing-feature">
+                <span class="check-icon">✓</span>
+                Up to 5 staff accounts
+              </li>
+
+              <li class="pricing-feature">
+                <span class="check-icon">✓</span>
+                Basic sales reports
+              </li>
+            </ul>
+
+            <a href="#contact" class="btn btn-outline">Get Started</a>
+          </article>
+
+          <article class="pricing-card popular reveal">
+            <span class="popular-badge">MOST POPULAR</span>
+
+            <h3 class="pricing-name">Professional</h3>
+
+            <p class="pricing-description">
+              For growing restaurants that need complete management tools.
+            </p>
+
+            <div class="price">
+              <strong>$49</strong>
+              <span>/ month</span>
+            </div>
+
+            <ul class="pricing-features">
+              <li class="pricing-feature">
+                <span class="check-icon">✓</span>
+                Everything in Starter
+              </li>
+
+              <li class="pricing-feature">
+                <span class="check-icon">✓</span>
+                Point of sale system
+              </li>
+
+              <li class="pricing-feature">
+                <span class="check-icon">✓</span>
+                Kitchen display system
+              </li>
+
+              <li class="pricing-feature">
+                <span class="check-icon">✓</span>
+                Inventory tracking
+              </li>
+
+              <li class="pricing-feature">
+                <span class="check-icon">✓</span>
+                Advanced analytics
+              </li>
+            </ul>
+
+            <a href="#contact" class="btn btn-primary">Start Free Trial</a>
+          </article>
+
+          <article class="pricing-card reveal">
+            <h3 class="pricing-name">Enterprise</h3>
+
+            <p class="pricing-description">
+              Built for restaurant groups, franchises, and multiple branches.
+            </p>
+
+            <div class="price">
+              <strong>Custom</strong>
+            </div>
+
+            <ul class="pricing-features">
+              <li class="pricing-feature">
+                <span class="check-icon">✓</span>
+                Everything in Professional
+              </li>
+
+              <li class="pricing-feature">
+                <span class="check-icon">✓</span>
+                Multi-branch management
+              </li>
+
+              <li class="pricing-feature">
+                <span class="check-icon">✓</span>
+                Custom branding
+              </li>
+
+              <li class="pricing-feature">
+                <span class="check-icon">✓</span>
+                API integrations
+              </li>
+
+              <li class="pricing-feature">
+                <span class="check-icon">✓</span>
+                Priority support
+              </li>
+            </ul>
+
+            <a href="#contact" class="btn btn-outline">Contact Sales</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-content">
+            <h2>Ready to Modernize Your Restaurant?</h2>
+
+            <p>
+              Join restaurants using QRServe to simplify ordering, improve
+              service, and grow their business.
+            </p>
+
+            <a href="#contact" class="btn btn-outline">
+              Start Your Free Trial
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <span class="section-tag">Get in Touch</span>
+
+          <h2>Let's Build a Smarter Restaurant</h2>
+
+          <p>
+            Tell us about your restaurant and our team will help you find the
+            right QRServe solution.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">✉</div>
+              <div>
+                <strong>Email</strong>
+                <span>hello@qrserve.app</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">☎</div>
+              <div>
+                <strong>Phone</strong>
+                <span>+1 555 123 4567</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">⌖</div>
+              <div>
+                <strong>Office</strong>
+                <span>Manila, Philippines</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                class="form-control"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                class="form-control"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="business">Business Name</label>
+            <input
+              class="form-control"
+              type="text"
+              id="business"
+              name="business"
+              placeholder="Your restaurant or café"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              placeholder="Tell us about your restaurant..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            Send Message
+            <span>→</span>
+          </button>
+
+          <div class="form-message" id="formMessage">
+            Thank you! Your message has been received.
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <div class="logo-icon">QR</div>
+            QR<span>Serve</span>
+          </a>
+
+          <p>
+            Modern QR ordering and restaurant management tools designed to
+            simplify operations and improve customer service.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Platform</h3>
+          <ul>
+            <li><a href="#features">QR Ordering</a></li>
+            <li><a href="#features">Digital Menu</a></li>
+            <li><a href="#features">Kitchen Display</a></li>
+            <li><a href="#features">Inventory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#home">About Us</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Book a Demo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="currentYear"></span> QRServe. All rights reserved.
+        </p>
+
+        <p>Scan. Order. Manage. Grow.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button
+    class="back-to-top"
+    id="backToTop"
+    aria-label="Back to top"
+  >
+    ↑
+  </button>
+
+  <script>
+    const siteHeader = document.getElementById("siteHeader");
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+    const navLinks = document.querySelectorAll(".nav-link");
+    const backToTop = document.getElementById("backToTop");
+    const contactForm = document.getElementById("contactForm");
+    const formMessage = document.getElementById("formMessage");
+    const currentYear = document.getElementById("currentYear");
+
+    function handleScroll() {
+      if (window.scrollY > 50) {
+        siteHeader.classList.add("scrolled");
+      } else {
+        siteHeader.classList.remove("scrolled");
+      }
+
+      if (window.scrollY > 500) {
+        backToTop.classList.add("visible");
+      } else {
+        backToTop.classList.remove("visible");
+      }
+    }
+
+    function toggleMobileMenu() {
+      const isOpen = navMenu.classList.toggle("active");
+
+      document.body.classList.toggle("menu-open", isOpen);
+      menuToggle.setAttribute("aria-expanded", isOpen);
+
+      menuToggle.textContent = isOpen ? "✕" : "☰";
+    }
+
+    function closeMobileMenu() {
+      navMenu.classList.remove("active");
+      document.body.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.textContent = "☰";
+    }
+
+    menuToggle.addEventListener("click", toggleMobileMenu);
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", closeMobileMenu);
+    });
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !message) {
+        alert("Please complete all required fields.");
+        return;
+      }
+
+      formMessage.style.display = "block";
+      contactForm.reset();
+
+      setTimeout(() => {
+        formMessage.style.display = "none";
+      }, 5000);
+    });
+
+    const revealElements = document.querySelectorAll(".reveal");
+
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.12
+      }
+    );
+
+    revealElements.forEach((element) => {
+      revealObserver.observe(element);
+    });
+
+    window.addEventListener("scroll", handleScroll);
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 1000) {
+        closeMobileMenu();
+      }
+    });
+
+    currentYear.textContent = new Date().getFullYear();
+
+    handleScroll();
+  </script>
+</body>
+</html>
